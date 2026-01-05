@@ -166,8 +166,8 @@ class AtestadoManualPdfView(LoginRequiredMixin, DetailView):
         )
 
         # colocar logo da UFN ao lado do logo do LAP
-        # story.append(imagem)
-        story.append(imagem_lap)
+        # story.append(imagem_lap)
+        story.append(imagem)
 
         # Título do documento
         story.append(Paragraph("ATESTADO DE PARTICIPAÇÃO", title_style))

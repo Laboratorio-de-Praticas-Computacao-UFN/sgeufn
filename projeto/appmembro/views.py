@@ -301,7 +301,7 @@ class InscricaoPdfView(LoginRequiredMixin, MembroRequiredMixin, DetailView):
     def parte_participante(inscricao):
         # colocar logo da UFN ao lado do logo do LAP
         # InscricaoPdfView.append(imagem)
-        InscricaoPdfView.story.append(InscricaoPdfView.imagem_lap)
+        InscricaoPdfView.story.append(InscricaoPdfView.imagem)
         
         # Título do documento
         InscricaoPdfView.story.append(Paragraph("ATESTADO DE PARTICIPAÇÃO", InscricaoPdfView.title_style))
@@ -456,7 +456,7 @@ class MinistrantePdfView(LoginRequiredMixin, MembroRequiredMixin, DetailView):
     def parte_ministrante(evento):
         # colocar logo da UFN ao lado do logo do LAP
         # story.append(imagem)
-        MinistrantePdfView.story.append(MinistrantePdfView.imagem_lap)
+        MinistrantePdfView.story.append(MinistrantePdfView.imagem)
         
         # Título do documento
         MinistrantePdfView.story.append(Paragraph("ATESTADO DE PARTICIPAÇÃO", MinistrantePdfView.title_style))
